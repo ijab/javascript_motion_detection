@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://www.soundstep.com/blog/experiments/jsdetection/ -->
+<html xmlns="http://www.w3.org/1999/html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Javascript & HTML5 Motion Detection | soundstep</title>
+	<link href="./resource/css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./resource/main.css" type="text/css">
+</head>
+<body class="black-background">
+
+<div id="container">
+
+	<div id="header">
+		<div class="allow" style="display: none;">Click "Allow" above to play the xylophone just by waving your hands.</div>
+		<div class="instructions" style="display: block;">To play the xylophone, turn up the volume and wave your hands.</div>
+		<div class="browsersWithVideo">This demo lets you play the xylophone using motion detection in your browser. Install <a href="https://www.google.com/chrome" target="_blank">Chrome</a> to play.</div>
+	</div>
+
+	<div id="content" style="height: 508px; width: 677.3333333333333px; left: 344.5px; top: 55px;">
+
+		<video id="webcam" autoplay="" width="640" height="480"></video>
+
+		<video id="video-demo" controls="controls" poster="./resource/videos/jsdetection.jpg" width="640" height="480" onclick="if(/Android/.test(navigator.userAgent))this.play();">
+			<source src="./resource/videos/jsdetection.mp4" type="video/mp4">
+			<source src="./resource/videos/jsdetection.ogg" type="video/ogg">
+			<source src="./resource/videos/jsdetection.webm" type="video/webm">
+			Your browser doesn't support the html 5 video tag.
+		</video>
+
+		<canvas id="canvas-source" width="640" height="480" style="display: inline;"></canvas>
+		<canvas id="canvas-blended" width="640" height="480" style="display: inline;"></canvas>
+		<div class="motion-cam" style="display: block;">Motion cam</div>
+
+		<div id="xylo" style="display: block;">
+			<div id="back"></div>
+			<div id="note0" class="note" style="opacity: 0;"></div>
+			<div id="note1" class="note" style="opacity: 0;"></div>
+			<div id="note2" class="note" style="opacity: 0;"></div>
+			<div id="note3" class="note" style="opacity: 0;"></div>
+			<div id="note4" class="note" style="opacity: 0;"></div>
+			<div id="note5" class="note" style="opacity: 0;"></div>
+			<div id="note6" class="note" style="opacity: 0;"></div>
+			<div id="note7" class="note" style="opacity: 0;"></div>
+		</div>
+	</div>
+
+	<div class="loading" style="display: none;">Loading assets...</div>
+
+	<div class="backFromVideo"><a href="http://www.soundstep.com/blog/experiments/jsdetection/#">Back</a><a></a></div><a>
+
+	<div class="introduction" style="display: none;">
+		<p>This demo lets you play the xylophone using motion detection in your browser.</p>
+		<p>Please allow access to your camera and microphone above.</p>
+	</div>
+
+	</a><div class="browsers"><a>
+		<p>This demo lets you play the xylophone using motion detection in your browser.</p>
+		</a><p><a>Install </a><a href="https://www.google.com/chrome" target="_blank">Chrome</a> to play, or <a href="http://www.soundstep.com/blog/experiments/jsdetection/#" id="watchVideo">watch this video</a> to check it out first.</p>
+	</div>
+
+	<div id="footer">
+		<div class="magic">Javascript &HTML5 Motion Detection - soundstep</div>
+		<!--
+		<div class="stinkdigital"><a href="http://www.stinkdigital.com/" target="_blank"><img src="./resource/stinkdigital.png"></a><a></a></div><a>
+		</a><div class="soundstep"><a></a><a href="http://www.soundstep.com/blog/2012/03/22/javascript-motion-detection/" target="_blank"><img src="./resource/soundstep.png"></a></div>
+	  -->
+	</div>
+
+</div>
+
+</script><script src="./resource/jquery.js"></script>
+<script src="./resource/buffer-loader.js"></script>
+<script src="./resource/app.js"></script>
+
+
+</body></html>
